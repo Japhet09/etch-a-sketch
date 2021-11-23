@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+    <!--<script src="main.js" defere></script> -->
+</head>
+<body>
+ <script> 
+
+const parentDiv = document.createElement('div'); // create the parent div to hold all the divs
+parentDiv.classList.add('container'); // assign a class to it
+parentDiv.style.backgroundColor = 'blue'
+
+const body = document.querySelector('body');
+body.appendChild(parentDiv)
+
+for(let i=0; i<255; i++){//a 16 by 16 grid means 256 div thats why i<255(we start the counter from 0)
+
+    const childDivs = document.createElement('div')
+    childDivs.classList.add('grid');
+    childDivs.style.backgroundColor = 'green'
+    parentDiv.appendChild(childDivs);
+}
+
+
+
+</script>
+</body>
+</html>
