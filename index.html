@@ -6,36 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="style.css">
-    <!--<script src="main.js" defere></script> -->
+    <script src="script.js" defer></script>
 </head>
 <body>
- <script> 
+    <main>
+    <h1>Etch A Sketch</h1>
+    <div class="container">
 
-const parentDiv = document.createElement('div'); // create the parent div to hold all the divs
-parentDiv.classList.add('container'); // assign a class to it
+    </div>
+</main>
 
-
-const body = document.querySelector('body');
-body.appendChild(parentDiv)
-
-for(let i=0; i<=255; i++){//a 16 by 16 grid means 256 div thats why i<=255(we start the counter from 0)
-
-    const childDivs = document.createElement('div') // create the child divs
-    childDivs.classList.add('grid'); // add a class
-
-    parentDiv.appendChild(childDivs); // append them to the parent div
-}
-const container = document.querySelector('.container'); // select the parent div
-container.addEventListener('mouseover', function(event){
-    event.target.style.backgroundColor = 'sandybrown'
-    /*setTimeout(() => {
-        event.target.style.backgroundColor = ''
-        
-    }, 1000);*/
-})
-
-
-
-</script>
 </body>
 </html>

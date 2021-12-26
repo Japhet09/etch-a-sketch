@@ -1,31 +1,25 @@
+
+*{
+    box-sizing: border-box;
+}
 .container{
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 800px;
-    height: 800px;
-  
-    
-  
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+    width: 90vh;
+    height:90vh
+
+
 }
-
-
-
-
-.grid{
-    width: 6.25%;
-    height: 6.25%;
-box-sizing: border-box;
-border:dotted  royalblue;
+.square{
+    background-color: rgb(0, 0, 0,0.1);
+    border: 1px solid rgb(235, 177, 177);
+ 
+}
+.square::before{
+    content: '';
     
 }
-button{
-    width: 100px;
-    height: 25px;
-    border: solid black 2px;
-    border-radius: 10%;
-}
-/*.grid:hover{
-    background-color: sandybrown;
+.square::after{
+    content: '';
 }
