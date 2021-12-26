@@ -1,19 +1,21 @@
 
 *{
+    background-color: rgb(191, 243, 243);
     box-sizing: border-box;
 }
 .container{
     display: grid;
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(16,1fr);
-    width: 90vh;
-    height:90vh
+    width: 70vh;
+    height:70vh;
+    border: 1px solid black;
 
 
 }
 .square{
     background-color: rgb(0, 0, 0,0.1);
-    border: 1px solid rgb(235, 177, 177);
+    border: 1px solid #e78282;
  
 }
 .square::before{
@@ -22,4 +24,36 @@
 }
 .square::after{
     content: '';
+}
+
+button{
+    border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:1em;
+	padding:10px 40px ;
+    margin: 10px;
+    background-color: #df97a3;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+h1{
+    display: flex;
+    background-color: rgb(26, 177, 177);
+    padding: 1em;
+    justify-content: center;
+   
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+
 }
