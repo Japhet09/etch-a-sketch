@@ -1,1 +1,2 @@
-A small project on how to work with the DOM in order to manipulate an HTML file
+A small project on how to work with the DOM 
+It's a game played between the user and  the computer
